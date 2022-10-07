@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy a Ticket</title>
+
+    <!-- link Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+
+    <!-- link Style -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="py-3 text-success">ITALIATRENI</h1>
+        <div class="row my-5 rounded-4 bg-warning">
+            <div class="col-12 col-md-6">
+                <div class="py-3">
+                    <h3> I TUOI DATI</h3>
+                    <div class="my-3">
+                        <label for="user-kms">Quanti Km dista la tua destinazione?</label>
+                        <input type="text" name="kms" id="user-kms">
+                    </div>
+                    
+                    <div class="my-3">
+                        <label for="user-age">Quanti anni hai?</label>
+                        <input type="text" name="age" id="user-age">
+                    </div>
+
+                    <div class="my-3">
+                        <label for="preference">Hai bisogno di altro?</label>
+                        <select name="" id="preference">
+                            <option value="economy">No</option>
+                            <option value="vip">Biglietto VIP</option>
+                        </select>
+                        <p class="my-2"> 
+                            <em>*Il biglietto VIP prevede connessione Wi-fi, spuntino e comode poltrone massaggianti a fronte di una maggiorazione del 100% sul prezzo del biglietto (dopo l'applicazione della scontistica età).</em> 
+                        </p>
+                    </div>
+                    
+                    <button class="btn btn-success" id="submit">Procedi</button>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-md-6">
+                    <div class="my-3">
+                        <h3> IL TUO BIGLIETTO</h3>
+                        <h2></h2>
+                        <h5 id="reduction"></h5>
+                        <h5 id="congrats"></h5>
+                        <button class="btn btn-success d-none mt-5" id="buy">Acquista</button>
+                    </div>
+
+                    <div>
+                        <h3 class="my-3" id="ticket-number"></h3>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- link script JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
