@@ -58,9 +58,14 @@ submitBtn.addEventListener("click", function() {
 
 //cliccando sul bottone Acquista verrà restituito un codice biglietto
 buyBtn.addEventListener("click", function() {
-    const ticketNumber = "IT" + (Math.floor(Math.random()*100000)+1);
-    document.getElementById("ticket-number").innerHTML = `Grazie per averci scelto! Il numero del tuo bigletto è:  <span class="text-success"> ${ticketNumber}</span>.`;
+    const randNumber =(Math.floor(Math.random()*100000)+1);
+   
+    myNum = randNumber.toString(16);
+    console.log(myNum, typeof myNum);
 
+    const ticketNumber = myNum + (Math.floor(Math.random()*(9999 - 1000 + 1)));
+
+    document.getElementById("ticket-number").innerHTML = `Grazie per averci scelto! Il numero del tuo biglietto è:  <span class="text-success"> ${ticketNumber}</span>.`;
 })
 
 

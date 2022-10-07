@@ -23,12 +23,12 @@
                     <h3> I TUOI DATI</h3>
                     <div class="my-3">
                         <label for="user-kms">Quanti Km dista la tua destinazione?</label>
-                        <input type="text" name="kms" id="user-kms">
+                        <input type="text" name="kms" id="user-kms" pattern="[0-9]{5}">
                     </div>
                     
                     <div class="my-3">
                         <label for="user-age">Quanti anni hai?</label>
-                        <input type="text" name="age" id="user-age">
+                        <input type="text" name="age" id="user-age" pattern="[0-9]{3}">
                     </div>
 
                     <div class="my-3">
@@ -38,7 +38,7 @@
                             <option value="vip">Biglietto VIP</option>
                         </select>
                         <p class="my-2"> 
-                            <em>*Il biglietto VIP prevede connessione Wi-fi, spuntino e comode poltrone massaggianti a fronte di una maggiorazione del 100% sul prezzo del biglietto (dopo l'applicazione della scontistica età).</em> 
+                            <em>*Il biglietto VIP prevede connessione Wi-fi, spuntino e comode poltrone massaggianti a fronte di una maggiorazione del <strong>100% </strong> sul prezzo del biglietto (dopo l'applicazione della scontistica età).</em> 
                         </p>
                     </div>
                     
